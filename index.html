@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+	<style >
+		.obj{
+			
+			}
+		.obj1{
+			position: absolute;
+			left: 5px;
+			top:420px;
+			height: 70px;
+			display: block
+			}
+
+		.obj2{
+			position: absolute;
+			left: 460px;
+			top:520px;
+			height: 20px;
+			}
+
+		.obj3{
+			position: absolute;
+			left: 435px;
+			top:400px;
+			height: 20px;
+			}
+
+		.obj4{
+			position: absolute;
+			left: 760px;
+			top:330px;
+			height: 50px;
+			}
+
+		.obj5{
+			position: absolute;
+			left: 125px;
+			top:120px;
+			height: 100px;
+			}
+		.obj6{
+			position: absolute;
+			left: 625px;
+			top:120px;
+			height: 100px;
+			}
+		.obj7{
+			position: absolute;
+			left: 450px;
+			top:300px;
+			height: 20px;
+			}
+		.obj01{
+			position: absolute;
+			left: 200px;
+			top:600px;
+			height: 80px;
+			}
+
+
+
+
+	</style>
+</head>
+<body style="background-color: #1f1f1f; color: grey ">
+
+	<div class="d-flex"> 
+
+		
+
+		<div class="col-3 " > 
+			<h1> Квартира жертвы </h1>
+			<p>Уберите только "вызывающие" предметы	</p>
+			<p>Не отнимайте работу у обычных уборщиц!	</p>
+			<h1> Счет: <span class="score">	</span></h1>
+			
+
+		<p class="txt3" style="color: red; font-weight: bold"> Голова </p>
+		<p style="color: red; font-weight: bold" class="txt1"> Ухо </p>
+		<p style="color: red; font-weight: bold" class="txt2">  Глаз</p>
+		<p style="color: red; font-weight: bold" class="txt4"> Кровь 1 </p>
+		<p style="color: red; font-weight: bold" class="txt5"> Кровь 2 </p>
+		<p style="color: red; font-weight: bold" class="txt6"> Кровь 3 </p>
+		
+		</div>
+		<div style="background-image: url(bg12.jpg); background-size: cover; background-repeat: no-repeat; height: 800px" class="col-8" > 
+
+			<img src="obj1.png" class="obj1 ">
+			<img src="obj2.png" class="obj2 ">
+			<img src="obj3.png" class="obj3 ">
+			<img src="obj4.png" class="obj4 ">
+			<img src="obj5.png" class="obj5 ">
+			<img src="obj6.png" class="obj6 ">
+			<img src="obj7.png" class="obj7 ">
+			<img src="obj01.png" class="obj01 ">
+		</div>
+		
+	</div>
+	
+
+	<script>
+		alert("Поздравляю! Ты получил работу уборщика мест престплений. Надеемся на вашу компетентность!");
+		let score = 0;
+		document.querySelector(".score").innerHTML = score;
+		let blood = 0;
+		
+	
+		document.querySelector(".obj1").onclick = function(){
+			score = score+1;
+	        document.querySelector(".score").innerHTML = score;
+	        document.querySelector(".obj1").style.display = "none"; 
+	        alert("Это кошка маньяка, но можешь забрать себе");
+    	}
+    	document.querySelector(".obj2").onclick = function(){
+			score = score+1;
+	        document.querySelector(".score").innerHTML = score;
+	       	document.querySelector(".obj2").style.display = "none"; 
+	       	document.querySelector(".txt1").style.color = "green"; 
+	       	alert("Еще чуть-чуть и ты бы сел на это");
+    	}
+    	document.querySelector(".obj3").onclick = function(){
+			score = score+1;
+	        document.querySelector(".score").innerHTML = score;
+	        document.querySelector(".obj3").style.display = "none"; 
+	        document.querySelector(".txt2").style.color = "green"; 
+	        alert("Приятного аппетита");
+    	}
+    	document.querySelector(".obj4").onclick = function(){
+			score = score+1;
+	        document.querySelector(".score").innerHTML = score;
+	        document.querySelector(".obj4").style.display = "none"; 
+	        document.querySelector(".txt3").style.color = "green"; 
+	        alert("Бедная девочка");
+    	}
+    	document.querySelector(".obj5").onclick = function(){
+			score = score+1;
+
+	        document.querySelector(".score").innerHTML = score;
+	        document.querySelector(".obj5").style.display = "none"; 
+	        document.querySelector(".txt4").style.color = "green"; 
+	        alert("Фу");
+    	}
+    	document.querySelector(".obj6").onclick = function(){
+			score = score+1;
+	        document.querySelector(".score").innerHTML = score;
+	        document.querySelector(".obj6").style.display = "none"; 
+	        document.querySelector(".txt5").style.color = "green"; 
+	        alert("Господи");
+    	}
+    	document.querySelector(".obj7").onclick = function(){
+			score = score+1;
+	        document.querySelector(".score").innerHTML = score;
+	        document.querySelector(".obj7").style.display = "none"; 
+	        document.querySelector(".txt6").style.color = "green"; 
+	        alert("Бе");
+    	}
+    	document.querySelector(".obj01").onclick = function(){
+			
+	        
+	        alert("Поставь на место! Это просто меч")
+    	}
+
+
+
+
+
+	</script>
+</body>
+</html>
